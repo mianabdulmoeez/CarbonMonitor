@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>CarbonMonitor.App</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Resources\carbon-monitor.ico</ApplicationIcon>
+    <AssemblyTitle>Carbon Monitor</AssemblyTitle>
+    <Product>Carbon Monitor</Product>
+    <Description>Lightweight Windows gaming hardware monitoring utility</Description>
+    <Version>1.0.0</Version>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Resources\carbon-monitor.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CarbonMonitor.Core\CarbonMonitor.Core.csproj" />
+    <ProjectReference Include="..\CarbonMonitor.Infrastructure\CarbonMonitor.Infrastructure.csproj" />
+    <ProjectReference Include="..\CarbonMonitor.Providers.Windows\CarbonMonitor.Providers.Windows.csproj" />
+    <ProjectReference Include="..\CarbonMonitor.Providers.Hardware\CarbonMonitor.Providers.Hardware.csproj" />
+    <ProjectReference Include="..\CarbonMonitor.Gaming\CarbonMonitor.Gaming.csproj" />
+  </ItemGroup>
+</Project>

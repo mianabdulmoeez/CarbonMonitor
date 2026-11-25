@@ -1,0 +1,162 @@
+# =============================================================================
+# Carbon Monitor .gitignore
+# =============================================================================
+
+# ----- .NET Build Outputs -----
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# ----- NuGet -----
+*.nupkg
+*.snupkg
+.nuget/
+**/packages/
+
+# ----- Publish & Installer Output -----
+publish/
+output/
+
+# ----- Visual Studio -----
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# ----- Visual Studio Code -----
+.vscode/
+*.code-workspace
+
+# ----- JetBrains Rider -----
+.idea/
+*.sln.iml
+
+# ----- Project-specific User Files -----
+*.csproj.user
+*.unityproj
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+# ----- Build Results -----
+[Dd]ebugPublic/
+[Rr]eleases/
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# ----- Test Results -----
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+TestResults/
+coverage/
+
+# ----- NCrunch -----
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# ----- Chutzpah -----
+_chutzpah*
+
+# ----- Resharper -----
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# ----- TeamCity -----
+_TeamCity*
+
+# ----- DotCover -----
+*.dotCover
+
+# ----- AxoCover -----
+.axoCover/*
+!.axoCover/settings.json
+
+# ----- Coverlet -----
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# ----- StyleCop -----
+StyleCopReport.xml
+
+# ----- Files built by Visual Studio -----
+*_i.c
+*_p.c
+*_h.h
+*.iobj
+*.ipdb
+*.nativecodeanalysis.xml
+\*.stackdump
+
+# ----- Backup & Misc -----
+*.bak
+*.cache
+*.ib_pdb_index
+*.ncrunchsolution
+*.ncrunchproject
+*~
+
+# ----- OS-specific -----
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ----- macOS (in case of cross-platform dev) -----
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ----- Windows Installer -----
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# ----- Logs -----
+logs/
+*.log
+
+# ----- Local app data / settings (development) -----
+appsettings.Development.json
+launchSettings.json
